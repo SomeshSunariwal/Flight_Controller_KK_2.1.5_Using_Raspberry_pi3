@@ -12,7 +12,7 @@ In this type of controlling your raspberry pi generate a signal which is similer
 
 Basically Flight Controller work on the PWM signal which is feed by the raspberry pi 3. 
 set the pins according to your configuration and connect them to the Flight Controller 
-### ALE
-### ELE
-### THR
-### RUD
+### ALE == 27
+### ELE == 22
+### THR == 26
+### RUD == 21
