@@ -9,5 +9,10 @@ Raspberry pi pin no. [21, 22, 26, 27] work as a pulse width mudulation so you ca
 In this type of controlling your raspberry pi generate a signal which is similer to the Radio Transmitter and feed the signal to the Flight Controller which is similer to the reciver.  
   
 ![](images/1.jpg)
-  
-  
+
+Basically Flight Controller work on the PWM signal which is feed by the raspberry pi 3. 
+set the pins according to your configuration and connect them to the Flight Controller 
+### ALE
+### ELE
+### THR
+### RUD
