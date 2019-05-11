@@ -15,7 +15,7 @@ class Drone:
         self.rudd = 21
 
         # Max Min Value
-        self.thr_max = 2400
+        self.thr_max = 2350
         self.thr_min = 1100
         self.rudd_max = 2000
         self.rudd_min = 1000
@@ -58,7 +58,7 @@ class Drone:
             self.thr_value += 10
             self.pi.set_servo_pulsewidth(self.thr, self.thr_value)  # incrementing the speed like hell
             if self.thr_value >= self.thr_max:
-                self.thr_value = 2400
+                self.thr_value = 2350
             print("th speed = %d" % self.thr_value)
 
         elif inp == "s":
@@ -75,7 +75,7 @@ class Drone:
             print("Rudd_speed = %d" % self.rudd_value)
             if self.rudd_value >= self.rudd_max:
                 self.rudd_value = 2000
-        elif inp == 'a':
+        elif inp == 'e':
             self.rudd_value -= 10
             print("Rudd_speed = %d" % self.rudd_value)
             self.pi.set_servo_pulsewidth(self.rudd, self.rudd_value)
@@ -83,7 +83,7 @@ class Drone:
                 self.rudd_value = 1000
 
         # Ailereon Setup (Left And Right)
-        elif inp == 'e':
+        elif inp == 'a':
             self.ail_value += 10
             self.pi.set_servo_pulsewidth(self.ail, self.ail_value)
             print("Ail_speed = %d" % self.ail_value)
