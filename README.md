@@ -12,7 +12,7 @@ In this type of controlling your raspberry pi generate a signal which is similer
 1. getch
 2. pigpio (most of the time this package already available in raspberry pi)
 
-   
+# Flight COntroller
 ![](images/1.jpg)
 
 Basically Flight Controller work on the PWM signal which is feed by the raspberry pi 3. 
